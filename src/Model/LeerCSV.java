@@ -31,7 +31,7 @@ public class LeerCSV {
         for (int i = 0; i < materiasPrimas.size(); i++) {
 
 
-            if (materiasPrimas.get(i).comprobar(componentesUsuarios)){
+            if (materiasPrimas.get(i).esMateriaPrima(componentesUsuarios)){
                 System.out.println("True");
                 return;
             }

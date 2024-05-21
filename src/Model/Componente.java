@@ -11,7 +11,7 @@ public class Componente {
         this.maximo = maximo;
     }
 
-    public boolean comprobarRango(float valor) {
+    public boolean esRangoCorrecto(float valor) {
         if (valor < maximo && valor > minimo) {
             return true;
         }

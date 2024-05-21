@@ -12,22 +12,23 @@ public class MateriaPrima {
         this.componentes = componentes;
     }
 
-    public boolean comprobar(HashMap<String, Float> componentesUsuarios) {
-        for (String componenteUsuario : componentesUsuarios.keySet()) {
-            for (Componente componente : componentes) {
-                if (!componenteUsuario.equals(componente.nombre)) {
+    public boolean esMateriaPrima(HashMap<String, Float> componentesUsuarios) {
+        if (componentes.size() != componentesUsuarios.size()) {
+            return false;
+        }
+
+        for (Componente componenteReceta : componentes) {
+            if (!componentesUsuarios.containsKey(componenteReceta.nombre)) {
+                return false;
+            } else {
+                float valorUsuario = componentesUsuarios.get(componenteReceta.nombre);
+                if (!componenteReceta.esRangoCorrecto(valorUsuario)) {
                     return false;
-                } else {
-                    float valor = componentesUsuarios.get(componenteUsuario);
-                    if (!componente.comprobarRango(valor)) {
-                        return false;
-                    }
                 }
             }
         }
         return true;
     }
-
 
     public ArrayList<Componente> getComponentes() {
         return componentes;

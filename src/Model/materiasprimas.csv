@@ -8,3 +8,4 @@ dolomita,fe2o3,0,0,sio2,0.1,3,al2o3,0,1,cao,0,30,mgo,0,20,na2o,0,0,k2o,0,0,tio2,
 mgco3,fe2o3,0,0.5,sio2,0,3,al2o3,0,1,cao,0.1,3,mgo,90,0,na2o,0,0.5,k2o,3,5,tio2,0,0.5,ppc,0,1
 talco,fe2o3,0.6,2,sio2,45,62,al2o3,0.5,10,cao,0.5,2,mgo,25,35,na2o,0,0.5,k2o,0,0.5,tio2,0,0.5,ppc,7,9
 feldespatos,fe2o3,0.05,0.4,sio2,63,77,al2o3,13,22,cao,0,2,mgo,0,0.7,na2o,0.1,5,k2o,0.1,10,tio2,0,0.35,ppc,0.5,2
+arenafeldespatica,fe2o3,0.05,0.15,sio2,80,97,al2o3,2,11,cao,0,0.08,mgo,0,0.2,na2o,0.1,0.6,k2o,1,4,tio2,0,0.03,ppc,0,2
