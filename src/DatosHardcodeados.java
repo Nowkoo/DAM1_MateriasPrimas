@@ -1,3 +1,6 @@
+import Model.Componente;
+import Model.MateriaPrima;
+
 import java.util.ArrayList;
 
 public class DatosHardcodeados {
@@ -6,6 +9,6 @@ public class DatosHardcodeados {
         ArrayList<Componente> componentesArcillaBlanca = new ArrayList<>();
         Componente sio2 = new Componente("SiO2", 48, 79);
         componentesArcillaBlanca.add(sio2);
-        MateriaPrima arcillaBlanca = new MateriaPrima(componentesArcillaBlanca);
+       // MateriaPrima arcillaBlanca = new MateriaPrima(componentesArcillaBlanca);
     }
 }

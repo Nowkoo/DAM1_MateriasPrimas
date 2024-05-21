@@ -1,9 +1,14 @@
+package Model;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MateriaPrima {
     ArrayList<Componente> componentes;
-    public MateriaPrima(ArrayList<Componente> componentes) {
+    private String nombre;
+    public MateriaPrima(String nombre,ArrayList<Componente> componentes) {
+
+        this.nombre = nombre;
         this.componentes = componentes;
     }
 
@@ -21,5 +26,14 @@ public class MateriaPrima {
             }
         }
         return true;
+    }
+
+
+    public ArrayList<Componente> getComponentes() {
+        return componentes;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 }

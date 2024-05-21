@@ -1,0 +1,10 @@
+arcillarojanocalcarea,fe2o3,3.5,8,sio2,30,65,al2o3,12,25,cao,0.5,2,mgo,0.8,3,na2o,0.1,0.9,k2o,3,5,tio2,1.2,100,ppc,0,6
+arcillarojacontenidosintermedios,fe2o3,3.5,8,sio2,30,65,al2o3,12,25,cao,2,5,mgo,0.8,3,na2o,0.1,0.9,k2o,3,5,tio2,1.2,100,ppc,7,10
+arcillarojacalcarea,fe2o3,3.5,8,sio2,30,65,al2o3,12,25,cao,10,25,mgo,0.8,3,na2o,0.1,0.9,k2o,3,5,tio2,1.2,100,ppc,15,23
+arcillablanca,fe2o3,0.8,5,sio2,48,79,al2o3,12,25,cao,0.5,2,mgo,0,0.5,na2o,0.1,1,k2o,0.7,3.5,tio2,0.9,2,ppc,3.5,12
+caolines,fe2o3,3.5,8,sio2,80,97,al2o3,2,11,cao,0,0.8,mgo,0,0.2,na2o,0.1,0.6,k2o,1,4,tio2,1.2,100,ppc,0,2
+caco3,fe2o3,0,0,sio2,0.1,3,al2o3,0,1,cao,50,56,mgo,0,2.5,na2o,0,0,k2o,0,0,tio2,0,0,ppc,40,45
+dolomita,fe2o3,0,0,sio2,0.1,3,al2o3,0,1,cao,0,30,mgo,0,20,na2o,0,0,k2o,0,0,tio2,0,0,ppc,45,100
+mgco3,fe2o3,0,0.5,sio2,0,3,al2o3,0,1,cao,0.1,3,mgo,90,0,na2o,0,0.5,k2o,3,5,tio2,0,0.5,ppc,0,1
+talco,fe2o3,0.6,2,sio2,45,62,al2o3,0.5,10,cao,0.5,2,mgo,25,35,na2o,0,0.5,k2o,0,0.5,tio2,0,0.5,ppc,7,9
+feldespatos,fe2o3,0.05,0.4,sio2,63,77,al2o3,13,22,cao,0,2,mgo,0,0.7,na2o,0.1,5,k2o,0.1,10,tio2,0,0.35,ppc,0.5,2

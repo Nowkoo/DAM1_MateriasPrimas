@@ -1,0 +1,54 @@
+{
+  "materiasprimas": [
+    {
+      "nombre": "arcillarojanocalcarea",
+      "componentes": [
+        {
+          "nombrecomponente": "fe2o3",
+          "min": 3.5,
+          "max": 8
+        },
+        {
+          "nombrecomponente": "sio2",
+          "min": 30,
+          "max": 65
+        },
+        {
+          "nombrecomponente": "al2o3",
+          "min": 12,
+          "max": 25
+        },
+        {
+          "nombrecomponente": "cao",
+          "min": 0.5,
+          "max": 2
+        },
+        {
+          "nombrecomponente": "mgo",
+          "min": 0.8,
+          "max": 3
+        },
+        {
+          "nombrecomponente": "na2o",
+          "min": 0.1,
+          "max": 0.9
+        },
+        {
+          "nombrecomponente": "k2o",
+          "min": 3,
+          "max": 5
+        },
+        {
+          "nombrecomponente": "tio2",
+          "min": 1.2,
+          "max": 100
+        },
+        {
+          "nombrecomponente": "ppc",
+          "min": 0,
+          "max": 6
+        }
+      ]
+    }
+  ]
+}
