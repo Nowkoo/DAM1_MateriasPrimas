@@ -1,3 +1,5 @@
+package Model;
+
 public class Componente {
     String nombre;
     float minimo;
