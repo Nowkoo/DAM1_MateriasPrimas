@@ -3,6 +3,7 @@ import java.util.HashMap;
 
 public class MateriaPrima {
     ArrayList<Componente> componentes;
+    String nombre;
     public MateriaPrima(ArrayList<Componente> componentes) {
         this.componentes = componentes;
     }
