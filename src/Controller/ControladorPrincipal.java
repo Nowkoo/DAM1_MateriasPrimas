@@ -1,11 +1,14 @@
 package Controller;
 
+import Model.MateriaPrima;
+
 import java.util.HashMap;
 
 import static Model.LeerCSV.cargarDatosCSV;
 import static Model.LeerCSV.materiasPrimas;
 
 public class ControladorPrincipal {
+
     public static void main(String[] args) {
 
         cargarDatosCSV();
@@ -23,14 +26,21 @@ public class ControladorPrincipal {
         componentesUsuarios.put("ppc",6.8f);
 
 
+    }
+
+    public static MateriaPrima comprobarMaterias(HashMap<String,Float> componenteUsuario){
+
         for (int i = 0; i < materiasPrimas.size(); i++) {
 
-
-            if (materiasPrimas.get(i).esMateriaPrima(componentesUsuarios)){
+            if (materiasPrimas.get(i).esMateriaPrima(componenteUsuario)){
                 System.out.println("True");
-                return;
+                return  materiasPrimas.get(i);
             }
         }
         System.out.println("False");
+        return null;
     }
+
+
+
 }
