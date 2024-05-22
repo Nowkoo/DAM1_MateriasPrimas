@@ -32,9 +32,9 @@ class PanelDerecho extends JPanel {
 
 }
 
-class PanelIzquierdoSur extends JPanel {
+public class PanelIzquierdoSur extends JPanel {
+    JButton enviar = new JButton("Enviar");
     PanelIzquierdoSur() {
-        JButton enviar = new JButton("Enviar");
         enviar.setFont(new Font("Arial", Font.BOLD, 15));
         add(enviar);
     }
