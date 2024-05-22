@@ -4,6 +4,8 @@ import Controller.ListenersVista;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 class PanelIzquierdo extends JPanel {
 
@@ -25,6 +27,10 @@ class PanelDerecho extends JPanel {
 
     PanelDerecho() {
         setLayout(new BorderLayout());
+        JLabel tituloResultado = new JLabel("Resultado");
+        JPanel resultado = new JPanel();
+        JLabel tituloInstruccion = new JLabel("Resultado");
+        JLabel textoInstruccion = new JLabel();
 
 
     }
@@ -42,6 +48,7 @@ class PanelIzquierdoSur extends JPanel {
 
 class PanelIzquierdoCenter extends JPanel {
 
+    HashMap<String, Float> cajas = new HashMap<>();
     PanelIzquierdoCenter() {
         // ------- DECLARAMOS E INSERTAMOS OBJETOS COMPONENTES --------
         Caja componente1 = new Caja("Si02");
@@ -56,7 +63,15 @@ class PanelIzquierdoCenter extends JPanel {
 
         setLayout(new GridLayout(3,3));
 
-        Caja[] cajas = new Caja[9];
+        cajas.put(componente1.getText(),componente1.getTextField());
+        cajas.put(componente2.getText(),componente2.getTextField());
+        cajas.put(componente3.getText(),componente3.getTextField());
+        cajas.put(componente4.getText(),componente4.getTextField());
+        cajas.put(componente5.getText(),componente5.getTextField());
+        cajas.put(componente6.getText(),componente6.getTextField());
+        cajas.put(componente7.getText(),componente7.getTextField());
+        cajas.put(componente8.getText(),componente8.getTextField());
+        cajas.put(componente9.getText(),componente9.getTextField());
 
         // AÑADIMOS LOS COMPONENTES
         add(componente1);
@@ -70,5 +85,10 @@ class PanelIzquierdoCenter extends JPanel {
         add(componente9);
 
     }
+
+    public HashMap<String,Float> getArrayCajas(){
+        return cajas;
+    }
+
 }
 

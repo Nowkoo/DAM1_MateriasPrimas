@@ -17,6 +17,7 @@ class FramePrincipal extends JFrame {
         add(panelIzquierdo);
         add(panelIzquierdo);
         setMinimumSize(new Dimension(500,500));
+
         //JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, panelIzquierdo, panelDerecho);
         //splitPane.setDividerLocation(150);
 
