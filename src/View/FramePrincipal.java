@@ -1,24 +1,24 @@
 package View;
 
 import javax.swing.*;
+import java.awt.*;
 
 class FramePrincipal extends JFrame {
 
-    public FramePrincipal() {
+    FramePrincipal() {
 
-        setBounds(30, 30, 500, 500);
         setTitle("Cerámica");
+        setSize(600, 600);
+        setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        PanelPrincipal panelPrincipal = new PanelPrincipal();
-        add(panelPrincipal);
 
-
-        /*
-        * JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftPanel, rightPanel);
-
-        splitPane.setDividerLocation(150);
-        splitPane.setOneTouchExpandable(true);
-        * */
+        PanelIzquierdo panelIzquierdo = new PanelIzquierdo();
+        PanelDerecho panelDerecho = new PanelDerecho();
+        add(panelIzquierdo);
+        add(panelIzquierdo);
+        setMinimumSize(new Dimension(500,500));
+        //JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, panelIzquierdo, panelDerecho);
+        //splitPane.setDividerLocation(150);
 
     }
 
