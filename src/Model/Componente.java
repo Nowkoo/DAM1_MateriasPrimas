@@ -12,7 +12,7 @@ public class Componente {
     }
 
     public boolean esRangoCorrecto(float valor) {
-        if (valor < maximo && valor > minimo) {
+        if (valor <= maximo && valor >= minimo) {
             return true;
         }
         return false;
