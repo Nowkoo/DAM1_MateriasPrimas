@@ -8,18 +8,19 @@ class FramePrincipal extends JFrame {
     FramePrincipal() {
 
         setTitle("Cerámica");
-        setSize(600, 600);
+        setSize(800, 700);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         PanelIzquierdo panelIzquierdo = new PanelIzquierdo();
         PanelDerecho panelDerecho = new PanelDerecho();
         add(panelIzquierdo);
-        add(panelIzquierdo);
+        add(panelDerecho);
         setMinimumSize(new Dimension(500,500));
 
-        //JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, panelIzquierdo, panelDerecho);
-        //splitPane.setDividerLocation(150);
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panelIzquierdo, panelDerecho);
+        splitPane.setDividerLocation(500);
+        add(splitPane);
 
     }
 

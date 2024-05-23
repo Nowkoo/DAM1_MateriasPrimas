@@ -16,13 +16,12 @@ class Caja extends JPanel{
         porcentaje = new JTextField(10);
 
         texto.setHorizontalAlignment(JLabel.CENTER);
-        texto.setFont(new Font("Arial", Font.PLAIN, 18));
+        texto.setFont(new Font("Arial", Font.PLAIN, 30));
         porcentaje.setHorizontalAlignment(JTextField.CENTER);
+        porcentaje.setFont(new Font("Arial", Font.PLAIN, 30));
 
         add(texto);
         add(porcentaje);
-
-        //setBorder(BorderFactory.createEmptyBorder(7, 30, 40, 30));
     }
 
     public String getText(){
@@ -30,6 +29,10 @@ class Caja extends JPanel{
     }
 
     public Float getTextField(){
-        return Float.parseFloat(porcentaje.getText());
+        try {
+            return Float.parseFloat(porcentaje.getText());
+        } catch (NumberFormatException e) {
+            return 0.0f;
+        }
     }
 }

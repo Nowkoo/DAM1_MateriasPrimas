@@ -26,11 +26,33 @@ class PanelIzquierdo extends JPanel {
 class PanelDerecho extends JPanel {
 
     PanelDerecho() {
-        setLayout(new BorderLayout());
-        JLabel tituloResultado = new JLabel("Resultado");
+        setLayout(new GridLayout(2,1));
+        setBackground(Color.cyan);
+        JPanel panelInstrucciones = new JPanel(new BorderLayout());
+        JPanel panelResultado = new JPanel(new BorderLayout());
+
+        JLabel tituloResultado = new JLabel("RESULTADO");
+        tituloResultado.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+        tituloResultado.setFont(new Font("Arial", Font.BOLD, 30));
+        tituloResultado.setHorizontalAlignment(JLabel.CENTER);
         JPanel resultado = new JPanel();
-        JLabel tituloInstruccion = new JLabel("Resultado");
+
+        JLabel tituloInstruccion = new JLabel("INSTRUCCIONES");
+        tituloInstruccion.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+        tituloInstruccion.setFont(new Font("Arial", Font.BOLD, 30));
+        tituloInstruccion.setHorizontalAlignment(JLabel.CENTER);
         JLabel textoInstruccion = new JLabel();
+
+        panelInstrucciones.add(tituloInstruccion, BorderLayout.NORTH);
+        panelInstrucciones.add(textoInstruccion, BorderLayout.CENTER);
+
+        panelResultado.add(tituloResultado, BorderLayout.NORTH);
+        panelResultado.add(resultado, BorderLayout.CENTER);
+
+        add(panelInstrucciones);
+        add(panelResultado);
+
+
 
 
     }
@@ -42,14 +64,19 @@ class PanelIzquierdoSur extends JPanel {
     JButton enviar = new JButton("Enviar");
     public PanelIzquierdoSur() {
         enviar.setFont(new Font("Arial", Font.BOLD, 15));
-        add(enviar);
+        enviar.setBackground(new Color(70, 130, 180));
+        enviar.setForeground(Color.WHITE);
+        enviar.setFocusPainted(false);
+
+        setLayout(new BorderLayout());
+        add(enviar, BorderLayout.CENTER);
     }
 }
 
 class PanelIzquierdoCenter extends JPanel {
 
     HashMap<String, Float> cajas = new HashMap<>();
-    PanelIzquierdoCenter() {
+    public PanelIzquierdoCenter() {
         // ------- DECLARAMOS E INSERTAMOS OBJETOS COMPONENTES --------
         Caja componente1 = new Caja("Si02");
         Caja componente2 = new Caja("Al2O3");
