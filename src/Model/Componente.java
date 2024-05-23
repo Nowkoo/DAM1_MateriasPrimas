@@ -1,9 +1,9 @@
 package Model;
 
 public class Componente {
-    String nombre;
-    float minimo;
-    float maximo;
+    private String nombre;
+    private float minimo;
+    private float maximo;
 
     public Componente (String nombre, float minimo, float maximo) {
         this.nombre = nombre;
@@ -17,4 +17,17 @@ public class Componente {
         }
         return false;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public float getMinimo() {
+        return minimo;
+    }
+
+    public float getMaximo() {
+        return maximo;
+    }
 }
+

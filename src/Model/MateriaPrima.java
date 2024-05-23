@@ -18,10 +18,10 @@ public class MateriaPrima {
         }
 
         for (Componente componenteReceta : componentes) {
-            if (!componentesUsuarios.containsKey(componenteReceta.nombre)) {
+            if (!componentesUsuarios.containsKey(componenteReceta.getNombre())) {
                 return false;
             } else {
-                float valorUsuario = componentesUsuarios.get(componenteReceta.nombre);
+                float valorUsuario = componentesUsuarios.get(componenteReceta.getNombre());
                 if (!componenteReceta.esRangoCorrecto(valorUsuario)) {
                     return false;
                 }

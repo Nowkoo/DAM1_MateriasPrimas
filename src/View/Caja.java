@@ -3,13 +3,12 @@ package View;
 import javax.swing.*;
 import java.awt.*;
 
-class Caja extends JPanel{
+public class Caja extends JPanel {
+    private JLabel texto;
+    private JTextField porcentaje;
 
-    public JLabel texto;
-    public JTextField porcentaje;
-
-    Caja(String nombreComponente){
-        setLayout(new GridLayout(2,1));
+    public Caja(String nombreComponente) {
+        setLayout(new GridLayout(2, 1));
         setBackground(Color.white);
 
         texto = new JLabel(nombreComponente);
@@ -24,11 +23,11 @@ class Caja extends JPanel{
         add(porcentaje);
     }
 
-    public String getText(){
+    public String getTextLabel() {
         return texto.getText();
     }
 
-    public Float getTextField(){
+    public Float getTextField() {
         try {
             return Float.parseFloat(porcentaje.getText());
         } catch (NumberFormatException e) {
