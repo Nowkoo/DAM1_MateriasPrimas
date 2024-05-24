@@ -42,6 +42,7 @@ public class BotonActionListener implements ActionListener {
             for (MateriaPrima materia : materias) {
                 if (materia.esMateriaPrima(componentesUsuarios)) {
                     panelDerecho.getResultado().setText("La materia prima es: " + materia.getNombre().toUpperCase());
+                    panelDerecho.getResultado().setText(materia.getNombre());
                     encontrado = true;
                     break;
                 }
