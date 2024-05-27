@@ -34,4 +34,9 @@ public class Caja extends JPanel {
             return 0.0f;
         }
     }
+    public JTextField getJTextField(){
+        return porcentaje;
+    }
+
+
 }
