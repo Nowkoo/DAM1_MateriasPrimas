@@ -28,7 +28,12 @@ public class FramePrincipal extends JFrame {
 
         JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panelIzquierdo, panelDerecho);
         splitPane.setDividerLocation(500);
-        add(splitPane);
+        getContentPane().add(splitPane, BorderLayout.CENTER);
+
+        splitPane.setResizeWeight(0.8);
+        splitPane.setDividerLocation(0.8);
+
+        setMinimumSize(new Dimension(500, 500));
 
     }
 
