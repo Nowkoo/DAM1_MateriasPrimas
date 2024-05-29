@@ -30,6 +30,25 @@ public class MateriaPrima {
         return true;
     }
 
+    public void esMateriaPrima2(HashMap<String, Float> componentesUsuarios) {
+        HashMap<MateriaPrima, Float> similares = new HashMap<>();
+        int porcentaje = 0;
+
+        for (Componente componenteReceta : componentes) {
+            if (!componentesUsuarios.containsKey(componenteReceta.getNombre())) {
+
+            } else {
+                float valorUsuario = componentesUsuarios.get(componenteReceta.getNombre());
+                int porcentajeComponente = componenteReceta.esRangoCorrecto2(valorUsuario);
+                porcentaje += porcentajeComponente;
+            }
+        }
+        if (porcentaje > 90) {
+
+        }
+        return similares;
+    }
+
     public ArrayList<Componente> getComponentes() {
         return componentes;
     }

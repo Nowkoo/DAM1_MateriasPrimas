@@ -18,6 +18,13 @@ public class Componente {
         return false;
     }
 
+    public int esRangoCorrecto2(float valor) {
+        if (valor <= maximo && valor >= minimo) {
+            return 9/100;
+        }
+        return 0;
+    }
+
     public String getNombre() {
         return nombre;
     }
