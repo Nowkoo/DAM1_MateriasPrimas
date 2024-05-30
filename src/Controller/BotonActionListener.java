@@ -39,17 +39,20 @@ public class BotonActionListener implements ActionListener {
             }
 
             boolean encontrado = false;
+            String similares = "Materias primas más cercanas:\n";
             for (MateriaPrima materia : materias) {
-                if (materia.esMateriaPrima(componentesUsuarios)) {
+                float porcentaje = materia.esMateriaPrima2(componentesUsuarios);
+                if (porcentaje >= 100) {
                     panelDerecho.getResultado().setText("La materia prima es: " + materia.getNombre().toUpperCase());
-                    //panelDerecho.getResultado().setText(materia.getNombre());
-                    encontrado = true;
                     break;
+                } else if (porcentaje >= 78) {
+                    similares += (materia.getNombre() + " - " + porcentaje + "\n");
+                    panelDerecho.getResultado().setText(similares);
                 }
             }
 
-            if (!encontrado) {
-                panelDerecho.getResultado().setText("Materia prima no encontrada");
+            if (panelDerecho.getResultado().getText().length() == 0) {
+                panelDerecho.getResultado().setText("Materia prima no encontrada.");
             }
         }
     }

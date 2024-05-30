@@ -18,9 +18,9 @@ public class Componente {
         return false;
     }
 
-    public int esRangoCorrecto2(float valor) {
+    public float esRangoCorrecto2(float valor, float maxPorcentaje) {
         if (valor <= maximo && valor >= minimo) {
-            return 9/100;
+            return maxPorcentaje;
         }
         return 0;
     }
